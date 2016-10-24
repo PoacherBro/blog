@@ -67,7 +67,7 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:git
-  repo:git@github.com:PoacherBro/poacherbro.github.com.git
-  branch:master
+deploy: 
+  type: git
+  repo: git@github.com:PoacherBro/poacherbro.github.com.git
+  branch: master
