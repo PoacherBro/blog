@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title:Leo的学习日志
-subtitle:
-description:
-author:Leo Liu
-language:zh-Hans
-timezone:
+title: Leo的学习日志
+subtitle: 记录学习
+description: 
+author: Leo Liu
+language: zh-Hans
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://poacherbro.github.com
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
+permalink_defaults: 
 
 # Directory
 source_dir: source
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
 
 # Writing
 new_post_name: :title.md # File name of new posts
