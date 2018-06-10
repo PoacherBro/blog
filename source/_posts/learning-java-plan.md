@@ -1,5 +1,5 @@
 ---
-title: learning-java-plan
+title: Java学习计划
 date: 2016-11-28 21:18:41
 tags: java
 categories: 学习
@@ -8,12 +8,12 @@ categories: 学习
 结合自己现状制定的一份巩固Java的学习计划。
 
 ## Java基础部分
-1. [] 重要的保留字 - `static`, `final`, `volatile`, `transient`  
-2. [] 基本的数据结构以及实现 - List, Set, Map, ArrayList, LinkedList, HashSet, HashMap  
-3. [] JVM的三个部分： 内存划分，class加载机制和GC策略  
-4. [] Java并发以及JDK concurrent包  
-5. [] 设计模式和反射  
-6. [] 文件IO，NIO，网络IO和网络协议  
+1. 重要的保留字 - `static`, `final`, `volatile`, `transient`  
+2. 基本的数据结构以及实现 - List, Set, Map, ArrayList, LinkedList, HashSet, HashMap  
+3. JVM的三个部分： 内存划分，class加载机制和GC策略  
+4. Java并发以及JDK concurrent包  
+5. 设计模式和反射  
+6. 文件IO，NIO，网络IO和网络协议  
 
 ## Spring框架  
 1. Servlet基础  

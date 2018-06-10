@@ -1,7 +1,7 @@
 ---
-title: binary_compatibility_cpp
+title: 二进制兼容
 date: 2018-06-08 10:44:47
-tags:
+tags: binary-compability
 ---
 
 # DLL的二进制兼容  
