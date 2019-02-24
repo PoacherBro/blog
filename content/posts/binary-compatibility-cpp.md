@@ -1,7 +1,7 @@
 ---
-title: 二进制兼容
-date: 2018-06-08 10:44:47
-tags: binary-compability
+title: "Binary Compatibility Cpp"
+date: 2018-06-08T10:44:47+08:00
+draft: false
 ---
 
 # DLL的二进制兼容  
@@ -13,6 +13,7 @@ tags: binary-compability
 当然，这只是一个现象级描述，其实在一些简单的例子里，假设我们导出一个C++类，在调用时，第三方仍然不需要重新编译可以运行。如下面例子：  
 
 * **FastString.dll** - *FastString.h文件*  
+
 ```cpp
 //导出类
 class __declspec(dllexport) FastString
@@ -29,6 +30,7 @@ private:
 ```
 
 * **test.exe** - *main.cpp文件*  
+
 ```cpp
 int main()
 {
@@ -51,11 +53,13 @@ virtual boole isEmpty();  // 位于 length 方法之前
 所以严格来讲，二进制兼容是保证在版本升级的情况下，对象实例的内存布局没有发生变化。  
 
 ### 为什么需要二进制兼容？  
+
 打个比方，如果库A升级没有做到二进制兼容，那么所有依赖它的程序（或库）都需要要重新编译才能应用A库的新版本，否则会出现各种未知异常，其直接现象就是程序莫名其妙的挂掉。  
 
 譬如像Qt这种使用率很广的程序库，如果每次版本升级都需要第三方使用者重新编译源程序，我想肯定是很多人不愿意的。  
 
 ### 哪些常见做法会破坏二进制兼容？  
+
 1. 给函数增加参数，现有的可执行文件无法传这个额外的参数。  
 2. 增加虚函数，会造成虚函数表vtbl里的排列变化。（不要考虑“只在末尾增加”这种取巧行为，因为你的class可能已被继承）  
 3. 增加默认模板类型参数  
@@ -153,6 +157,7 @@ void Foo::setString( const QString& s )
 5. [HowTo: Export C++ classes from a DLL](https://www.codeproject.com/Articles/28969/HowTo-Export-C-classes-from-a-DLL)  
 
 **和COM相关：**  
+
 1. [MSDN - COM Objects and Interfaces](https://msdn.microsoft.com/en-us/library/ms690343\(v=vs.85\).aspx)  
 2. [SO - COM(C++) programming tutorials?\[closed\]](https://stackoverflow.com/questions/2938435/comc-programming-tutorials)  
 3. [博客园 - COM 入门(1)](http://www.cnblogs.com/zxjay/archive/2010/08/28/1811163.html)  
