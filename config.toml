@@ -1,4 +1,12 @@
 baseURL = "http://poacherbro.github.io/"
 languageCode = "zh-cn"
 title = "Leo的学习日志"
-theme = "hyde"
+theme = "next"
+
+[Params]
+  Author = ""
+  Birth = ""
+  DateFormat = "Mon, Jan 2, 2006"
+
+[Indexes]
+  tag = "tags"

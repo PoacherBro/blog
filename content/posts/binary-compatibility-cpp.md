@@ -1,10 +1,8 @@
 ---
-title: "Binary Compatibility Cpp"
+title: "DLL的二进制兼容"
 date: 2018-06-08T10:44:47+08:00
 draft: false
 ---
-
-# DLL的二进制兼容  
 
 ## 详解  
 
@@ -19,13 +17,13 @@ draft: false
 class __declspec(dllexport) FastString
 {
 public:
-	FastString();
-	~FastString();
-
-	size_t length() { return 0; }
+    FastString();
+    ~FastString();
+    
+    size_t length() { return 0; }
 
 private:
-	unsigned char *m_bytes;
+    unsigned char *m_bytes;
 }
 ```
 
@@ -34,11 +32,11 @@ private:
 ```cpp
 int main()
 {
-	FastString fStr;
-	size_t len = fStr.length();
-
-	printf("fast string length %d\n", len);
-	_getch();
+    FastString fStr;
+    size_t len = fStr.length();
+    
+    printf("fast string length %d\n", len);
+    _getch();
     return 0;
 }
 ```
