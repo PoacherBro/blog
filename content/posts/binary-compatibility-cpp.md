@@ -76,7 +76,7 @@ virtual boole isEmpty();  // 位于 length 方法之前
 COM (Component object model) 组件对象模型是微软提出的一个伟大想法，它其实是一个规范，并且是二进制规范，也就是说只要遵循这个规范，任何语言、任何平台都可以相互调用相应组件。  
 
 COM涉及到几个概念：  
-1. *class ID*，可以是*CLSID - class的GUID* 或者 *IID - interface的GUID*。COM通过这个ID来保证快语言，因为基本上所有语言都可以处理GUID字符串；另外COM开发者可以通过GUID来获取到准确的对象结构。  
+1. *class ID*，可以是*CLSID - class的GUID* 或者 *IID - interface的GUID*。COM通过这个ID来保证跨语言，因为基本上所有语言都可以处理GUID字符串；另外COM开发者可以通过GUID来获取到准确的对象结构。  
 2. *coclass - **c**omponent **o**bject **class***，简单来说就是COM组件提供给使用者的接口类，这些类其实都是都继承 `IUnkown`接口的抽象类，里面都是纯虚函数。这个`IUnknown`包含三个方法：  
     - `AddRef` - 增加对象引用计数  
     - `Release` - 减少引用计数，如果计数为0，则销毁  
