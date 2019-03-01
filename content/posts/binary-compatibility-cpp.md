@@ -132,7 +132,7 @@ private:
 这样就可以允许第三方去修改D指针指向的内容，但是不能修改这个指针的指向目标。  
 
 当这样实现后，我们所有的数据操作都是通过class Foo 的成员方法来做，例如：  
-```
+```cpp
 QString Foo::string() const
 {
     return d->s;
