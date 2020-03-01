@@ -1,26 +1,22 @@
 baseurl = "/"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh"
-theme = "hello-friend"
+languageCode = "en-us"
+theme = "hugo-theme-hello-friend"
 paginate = 5
 
 [params]
   # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "blog"
-
+  contentTypeName = "post"
   # "light" or "dark"
   defaultTheme = "dark"
-
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
-
-  # Show reading time in minutes for posts
+  # Enable to show reading time in minutes for posts
   showReadingTime = false
 
 [languages]
-  [languages.zh]
-    title = "Leo学习日志"
-    subtitle = "保持学习的快乐"
+  [languages.en]
+    title = "Hello Friend"
+    subtitle = "A simple theme for Hugo"
     keywords = ""
     copyright = ""
     menuMore = "Show more"
@@ -32,23 +28,21 @@ paginate = 5
     minuteReadingTime = "min read"
     dateFormatSingle = "2006-01-02"
     dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
 
-    [languages.zh.params.logo]
-      logoText = "Leo学习小站"
+    [languages.en.params.logo]
+      logoText = "hello friend"
       logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-    [languages.zh.menu]
-      [[languages.zh.menu.main]]
+    [languages.en.menu]
+      [[languages.en.menu.main]]
         identifier = "about"
-        name = "关于"
+        name = "About"
         url = "/about"
-      [[languages.zh.menu.main]]
-        identifier = "archive"
-        name = "归档"
-        url = "/archive"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
